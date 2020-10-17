@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
+            
         }
     }
 
