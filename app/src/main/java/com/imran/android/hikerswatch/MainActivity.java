@@ -93,12 +93,16 @@ public class MainActivity extends AppCompatActivity {
                     address += listAddress.get(0).getThoroughfare() + "\n";
                 }
 
-                if (listAddress.get(0).getThoroughfare() != null) {
-                    address += listAddress.get(0).getThoroughfare() + "\n";
-                }
-
                 if (listAddress.get(0).getLocality() != null) {
                     address += listAddress.get(0).getLocality() + "\n";
+                }
+
+                if (listAddress.get(0).getPostalCode() != null) {
+                    address += listAddress.get(0).getPostalCode() + "\n";
+                }
+
+                if (listAddress.get(0).getAdminArea() != null) {
+                    address += listAddress.get(0).getAdminArea();
                 }
             }
         } catch (Exception e) {
