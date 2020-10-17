@@ -75,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
         TextView addressTextView = findViewById(R.id.addressText);
 
         latitudeTextView.setText("Latitude: " + Double.toString(location.getLatitude()));
-        longitudeTextView.setText("Latitude: " + Double.toString(location.getLongitude()));
-        accuracyTextView.setText("Latitude: " + Double.toString(location.getAccuracy()));
-        altitudeTextView.setText("Latitude: " + Double.toString(location.getAltitude()));
+        longitudeTextView.setText("Longitude: " + Double.toString(location.getLongitude()));
+        accuracyTextView.setText("Accuracy: " + Double.toString(location.getAccuracy()));
+        altitudeTextView.setText("Altitude: " + Double.toString(location.getAltitude()));
 
         String address = "\nCould Not find address :(";
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (listAddress.get(0).getLocality() != null) {
-                    address += listAddress.get(0).getLocality() + "\n";
+                    address += listAddress.get(0).getLocality() + ", ";
                 }
 
                 if (listAddress.get(0).getPostalCode() != null) {
