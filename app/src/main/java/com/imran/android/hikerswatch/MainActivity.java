@@ -85,6 +85,22 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             List <Address> listAddress = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
+
+            if (listAddress != null && listAddress.size() > 0) {
+                address = "Address:\n";
+
+                if (listAddress.get(0).getThoroughfare() != null) {
+                    address += listAddress.get(0).getThoroughfare() + "\n";
+                }
+
+                if (listAddress.get(0).getThoroughfare() != null) {
+                    address += listAddress.get(0).getThoroughfare() + "\n";
+                }
+
+                if (listAddress.get(0).getLocality() != null) {
+                    address += listAddress.get(0).getLocality() + "\n";
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
