@@ -12,6 +12,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     LocationManager locationManager;
@@ -59,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void updateLocationInfo(Location location) {
+        TextView lattitudeTextView = findViewById(R.id.lattitudeText);
+        TextView longitudeTextView = findViewById(R.id.longitudeText);
+        TextView accuracyTextView = findViewById(R.id.accuracyText);
+        TextView altitudeTextView = findViewById(R.id.altitudeText);
+        TextView addressTextView = findViewById(R.id.addressText);
 
+        
     }
 }

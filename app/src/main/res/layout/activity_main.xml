@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/rail_road" />
 
     <TextView
-        android:id="@+id/longitubeText"
+        android:id="@+id/longitudeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -29,7 +29,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lattitubeText" />
+        app:layout_constraintTop_toBottomOf="@+id/lattitudeText" />
 
     <TextView
         android:id="@+id/accuracyText"
@@ -41,7 +41,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/longitubeText" />
+        app:layout_constraintTop_toBottomOf="@+id/longitudeText" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
-        android:id="@+id/lattitubeText"
+        android:id="@+id/lattitudeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -85,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:text="Altitude:\n40 Sing Lane"
+        android:text="Address:\n40 Sing Lane"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
