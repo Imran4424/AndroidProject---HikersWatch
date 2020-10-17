@@ -29,7 +29,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lattitudeText" />
+        app:layout_constraintTop_toBottomOf="@+id/latitudeText" />
 
     <TextView
         android:id="@+id/accuracyText"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="@+id/background" />
 
     <TextView
-        android:id="@+id/lattitudeText"
+        android:id="@+id/latitudeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
